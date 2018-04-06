@@ -1,0 +1,49 @@
+html, body {
+    font-family: Arial;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: cadetblue;
+    color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.menuoptions {
+    background-color: cadetblue;
+    color: white;
+    font-size: 3em;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.menuoptions>span:hover {
+    background-color: white;
+    color: cadetblue;
+}
+
+.content {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footer {
+    background-color: cadetblue;
+    color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#titre {
+    font-size: 2em;
+}
+
+.header>img {
+    height: 100%;
+    vertical-align: middle;
+}
