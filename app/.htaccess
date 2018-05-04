@@ -1,2 +1,2 @@
 RewriteEngine on
-RewriteRule ^(.*)$ index.php [L,QSA]
+RewriteRule ^(?!public)(.*)$ index.php [L,QSA]
