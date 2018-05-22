@@ -3,6 +3,8 @@ html, body {
     text-align: justify;
     margin: 0;
     padding: 0;
+    font-size: 1em;
+    height: 100%;
 }
 
 .header {
@@ -10,19 +12,19 @@ html, body {
     color: white;
     padding-left: 15%;
     padding-right: 15%;
+    position: relative;
+}
+
+.content {
+    position: relative;
 }
 
 .menuoptions {
     background-color: cadetblue;
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     padding-left: 15%;
     padding-right: 15%;
-}
-
-.menuoptions>span:hover {
-    background-color: white;
-    color: cadetblue;
 }
 
 .content {
@@ -35,8 +37,10 @@ html, body {
     color: white;
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    float: bottom;
+    text-align: center;
 }
 
 #titre {
@@ -46,4 +50,25 @@ html, body {
 .header>img {
     height: 100%;
     vertical-align: middle;
+}
+
+.menuitem>a {
+    color: white;
+    text-decoration: none;
+}
+
+.menuitem>a:hover {
+    background-color: white;
+    color: cadetblue;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.menuitem>form {
+    float: right;
+}
+
+.content {
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
