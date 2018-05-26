@@ -906,8 +906,8 @@ INSERT INTO `keySympt` (`idK`, `idS`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `keywords` (
-  `idK` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id du mot clef',
-  `name` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'mot clef',
+  `idK` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`idK`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=347 ;
 
@@ -1270,10 +1270,10 @@ INSERT INTO `keywords` (`idK`, `name`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `meridien` (
-  `code` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'code du méridien',
-  `nom` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'nom',
-  `element` varchar(1) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'élément',
-  `yin` tinyint(1) NOT NULL COMMENT 'vrai si yin',
+  `code` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nom` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `element` varchar(1) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `yin` tinyint(1) NOT NULL,
   PRIMARY KEY (`code`),
   KEY `element` (`element`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1312,9 +1312,9 @@ INSERT INTO `meridien` (`code`, `nom`, `element`, `yin`) VALUES
 
 CREATE TABLE IF NOT EXISTS `patho` (
   `idP` int(11) NOT NULL AUTO_INCREMENT,
-  `mer` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'code du méridien',
+  `mer` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
   `type` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `desc` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'description de la pathologie',
+  `desc` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`idP`),
   KEY `code` (`mer`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=116 ;
@@ -1451,8 +1451,8 @@ INSERT INTO `patho` (`idP`, `mer`, `type`, `desc`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `symptome` (
-  `idS` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id du symptome',
-  `desc` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'description du symptôme',
+  `idS` int(11) NOT NULL AUTO_INCREMENT,
+  `desc` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`idS`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=449 ;
 
@@ -1914,7 +1914,7 @@ INSERT INTO `symptome` (`idS`, `desc`) VALUES
 CREATE TABLE IF NOT EXISTS `symptPatho` (
   `idS` int(11) NOT NULL,
   `idP` int(11) NOT NULL,
-  `aggr` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'Vrai si symptôme d''aggravation',
+  `aggr` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`idS`,`idP`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -2465,6 +2465,16 @@ INSERT INTO `symptPatho` (`idS`, `idP`, `aggr`) VALUES
 (447, 112, 0),
 (448, 113, 0);
 
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `hash` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `users` (`name`, `hash`) VALUES
+('admin', 'd033e22ae348aeb5660fc2140aec35850c4da997');
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -8,6 +8,15 @@ class  Router{
     self::$routes[] = [
       'request'  =>  $request, 
       'url'   =>  $url,
+      'api' => false,
+    ];
+  }
+
+  public static function addRouteApi($request, $url){
+    self::$routes[] = [
+      'request'  =>  $request, 
+      'url'   =>  $url,
+      'api' => true,
     ];
   }
 
