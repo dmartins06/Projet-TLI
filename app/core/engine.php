@@ -5,6 +5,7 @@ include_once('routes.php');
 
 require('./smarty/Smarty.class.php');
 
+session_start();
 $smarty = new Smarty();
 
 $smarty->setTemplateDir('./pages/template');
