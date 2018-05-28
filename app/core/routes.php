@@ -1,10 +1,12 @@
 <?php
 
+
 Router::addRoute('/', 'home.php');
 Router::addRoute('enregistrer/', 'signup.php');
 Router::addRoute('contact/', 'contact.php');
 Router::addRoute('recherche/', 'recherche.php');
 Router::addRoute('apiList/', 'apiList.php');
+Router::addRoute('search/', 'searchPatho.php');
 
 Router::addRouteApi('rechercheParKeyWord/', 'recherche.php');
 Router::addRouteApi('connexion/', 'login.php');

@@ -1452,7 +1452,7 @@ INSERT INTO `patho` (`idP`, `mer`, `type`, `desc`) VALUES
 
 CREATE TABLE IF NOT EXISTS `symptome` (
   `idS` int(11) NOT NULL AUTO_INCREMENT,
-  `desc` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `descri` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`idS`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=449 ;
 
@@ -1460,7 +1460,7 @@ CREATE TABLE IF NOT EXISTS `symptome` (
 -- Contenu de la table `symptome`
 --
 
-INSERT INTO `symptome` (`idS`, `desc`) VALUES
+INSERT INTO `symptome` (`idS`, `descri`) VALUES
 (1, 'Abdomen dilaté, douloureux et chaud'),
 (2, 'Abdomen flasque'),
 (3, 'Absence d''érection'),
