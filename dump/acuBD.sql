@@ -2468,13 +2468,13 @@ INSERT INTO `symptPatho` (`idS`, `idP`, `aggr`) VALUES
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `hash` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `hash` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 INSERT INTO `users` (`name`, `hash`) VALUES
-('admin', 'd033e22ae348aeb5660fc2140aec35850c4da997');
+('admin', '$2y$10$wS0.2NZ.S1mwhHt.qmzX1O58ZFLRKc9DyK8/kJZALGdRhat7V/StW');
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

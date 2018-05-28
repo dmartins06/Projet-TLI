@@ -1,8 +1,7 @@
 <?php 
-session_start();
 header('Content-type: application/json');
 include_once "connect.php";
-if(isset($_SESSION['user_name'])){
+if(isset($_SESSION['username'])){
   $db = pdoConnect();
   $stmt = $db->prepare("SELECT idP FROM patho");
   $stmt->execute();

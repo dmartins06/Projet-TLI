@@ -1,20 +1,22 @@
 <?php
-session_start();
-header('Content-type: application/json');
+header( 'Location: /');
 include_once "connect.php";
 
-$name = $_POST['name'];
-$hash= $_POST['hash'];
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-if(isset($name) && isset($hash)) {
+if(isset($username) && isset($password)) {
+  $hash = password_hash($password, PASSWORD_DEFAULT);
   $db = pdoConnect();
-  $stmt = $db->prepare("SELECT id FROM users where name=:name and hash=:hash");
-  $stmt->bindParam(':name', $name);
-  $stmt->bindParam(':hash', $hash);
+  $stmt = $db->prepare("SELECT * FROM users where name=:username");
+  $stmt->bindParam(':username', $username);
   $stmt->execute();
+  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
   if($stmt->rowCount() == 1) {
-    $_SESSION['user_name'] = $name;
-    echo("a");
+    $hash = $rows[0]['hash'];
+    if(password_verify($password, $hash)){
+      $_SESSION['username'] = $username;
+    }
   }
 }
 ?>
