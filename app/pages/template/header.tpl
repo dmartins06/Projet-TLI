@@ -10,9 +10,7 @@
             <li><a href="base.html">&nbsp; Contact &nbsp;</a></li>
             <li id="loginForm">
                 {if $smarty.session.username}
-                    <a href="/deconnexion">Déconnexion</a>
-                {else}
-                    {include file='login.tpl'}
+                    {$smarty.session.username}<a href="/deconnexion">Déconnexion</a>
                 {/if}</li>
         </ul>
     </nav>
