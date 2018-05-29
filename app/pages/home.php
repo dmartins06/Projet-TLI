@@ -1,4 +1,7 @@
 {extends file='pages/base.html'}
+
+{block name=title}Homepage{/block}
+
 {block name=content}
 
 {$smarty.session.username}
