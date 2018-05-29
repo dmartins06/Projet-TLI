@@ -7,11 +7,11 @@ html, body {
     height: 100%;
 }
 
-.header {
+header {
     background-color: cadetblue;
     color: white;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
     position: relative;
 }
 
@@ -19,20 +19,12 @@ html, body {
     position: relative;
 }
 
-.menuoptions {
-    background-color: cadetblue;
-    color: white;
-    font-size: 2em;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
 .content {
     padding-left: 15%;
     padding-right: 15%;
 }
 
-.footer {
+footer {
     background-color: cadetblue;
     color: white;
     padding-left: 15%;
@@ -51,23 +43,35 @@ html, body {
     vertical-align: middle;
 }
 
-.menuitem>a {
-    color: white;
-    text-decoration: none;
-}
-
-.menuitem>a:hover {
-    background-color: white;
-    color: cadetblue;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.menuitem>form {
-    float: right;
-}
-
 .content {
     padding-top: 3%;
     padding-bottom: 3%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: cadetblue;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: white;
+    color: cadetblue;
+}
+
+#loginForm {
+    float: right;
 }
