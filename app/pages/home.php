@@ -3,12 +3,6 @@
 
 {$smarty.session.username}
 
-{if $smarty.session.username}
-  <a href="/deconnexion">Déconnexion</a>
-{else}
-  {include file='login.tpl'}
-{/if}
-
 <h1>
     Bienvenue l'acupuncture pour les nuls.
 </h1>
