@@ -1,3 +1,8 @@
+@import "header.css" screen;
+@import "nav.css" screen;
+@import "home.css" screen;
+@import "footer.css" screen;
+
 html, body {
     font-family: Arial;
     text-align: justify;
@@ -5,73 +10,4 @@ html, body {
     padding: 0;
     font-size: 1em;
     height: 100%;
-}
-
-header {
-    background-color: cadetblue;
-    color: white;
-    padding-left: 10%;
-    padding-right: 10%;
-    position: relative;
-}
-
-.content {
-    position: relative;
-}
-
-.content {
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-footer {
-    background-color: cadetblue;
-    color: white;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    float: bottom;
-    text-align: center;
-}
-
-#titre {
-    font-size: 2em;
-}
-
-.header>img {
-    vertical-align: middle;
-}
-
-.content {
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: cadetblue;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: white;
-    color: cadetblue;
-}
-
-#loginForm {
-    float: right;
 }
