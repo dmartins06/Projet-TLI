@@ -4,7 +4,7 @@
         <form method="get" action="pathologies.php">
             <div class="symptomes">
                 <h2>Liste des symptomes</h2>
-                <!-- Afficher la liste des 24 symptomes pour sélection puis recherche de pathologie en fonction des symptomes -->
+                <!-- Afficher la liste des symptomes -->
             </div>
 
             <div class="criteres">
