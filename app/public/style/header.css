@@ -10,11 +10,3 @@ header>img {
     vertical-align: middle;
 }
 
-#loginForm {
-    background-color: cadetblue;
-    text-align: center;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    display:none;
-    border-top: 1px white solid;
-}

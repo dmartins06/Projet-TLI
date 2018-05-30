@@ -17,8 +17,22 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 22px;
 }
 
 input[type=submit]:hover {
     background-color: #8fbbbc;
+}
+
+.inlineForm input{
+  display: inline-block;
+  width: 20%;
+}
+
+.inlineForm input[type=submit]{
+    background-color: #436e70;
+}
+
+.inlineForm label{
+  width: 20%;
 }

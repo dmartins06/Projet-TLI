@@ -1,4 +1,4 @@
-<div id="loginForm">
+<div id="loginForm" class="inlineForm">
   {if !$smarty.session.username}
   <form method="post" action="connexion">
     <label for="username" >Nom d'utilisateur</label>

@@ -4,6 +4,6 @@
        L'ACUPUNCTURE POUR LES ZEUBS
    </h1>
    {include file="nav.tpl"}
-</header>
 {include file='login.tpl'}
+</header>
 

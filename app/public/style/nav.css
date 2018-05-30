@@ -19,9 +19,9 @@ nav>ul>li a {
 }
 
 nav>ul>li a:hover {
-    background-color: white;
-    color: cadetblue;
+    background-color: #436e70;
 }
+
 .userManage {
     float: right;
 }

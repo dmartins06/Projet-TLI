@@ -4,7 +4,7 @@
 
 {block name=restricted}
 
-<form method="post" action="rechercheParKeyWord">
+<form method="post"  action="rechercheParKeyWord">
   <label for="keyWord">Mot clé</label>
   <input id="keyWord" name="keyword" type="text" required>
   <input id="submit" name="submit" type="submit" value="Rechercher">
