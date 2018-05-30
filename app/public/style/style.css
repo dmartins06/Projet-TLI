@@ -1,7 +1,9 @@
 @import "header.css" screen;
 @import "nav.css" screen;
-@import "home.css" screen;
+@import "content.css" screen;
 @import "footer.css" screen;
+@import "table.css" screen;
+@import "form.css" screen;
 
 html, body {
     font-family: Arial;
@@ -10,5 +12,9 @@ html, body {
     padding: 0;
     font-size: 1em;
     height: 100%;
+<<<<<<< HEAD
     background-image: url("../images/background.png");
 }
+=======
+}
+>>>>>>> Update css
