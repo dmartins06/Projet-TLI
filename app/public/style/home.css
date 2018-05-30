@@ -6,6 +6,7 @@
     padding-bottom: 3%;
 }
 
-#titre {
+.content>h1 {
     font-size: 2em;
+    color: cadetblue;
 }
