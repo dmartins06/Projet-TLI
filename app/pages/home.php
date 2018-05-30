@@ -4,12 +4,8 @@
 
 {block name=content}
 
-{if !$smarty.session.username}
-  {include file='login.tpl'}
-{/if}
-
 <h1>
-    Bienvenue l'acupuncture pour les nuls.
+    Bienvenue sur l'acupuncture pour les nuls.
 </h1>
 
 <p>
@@ -23,6 +19,25 @@
     divers : des aiguilles le plus souvent, mais aussi d'autres moyens physiques (mécaniques, électriques, magnétiques,
     thermiques, lumineux) ou physico-chimiques, voire d'autres méthodes alternatives dangereuses (apipuncture,
     apithérapie avec des piqûres d'abeille).
+</p>
+<p class="illustration">
+    <img src="public/images/exampleAc.png" width="400" alt="illustration de l'acupuncture">
+</p>
+<p>
+    L'acupuncture ne s'est pas construite sur le savoir scientifique moderne et ses fondements sont considérés comme
+    relevant de la pseudo-science. Cependant, des travaux réalisés depuis les années 1990 par des équipes de
+    chercheurs tendent à montrer une efficacité relative, et ce grâce à des mécanismes neuropsychologiques avérés
+    (effet placebo), ou neurophysiologiques réels, indiquant une efficacité notamment dans le traitement de la
+    douleur. Le risque d'iatrogénie existe9, notamment par la transmission d'agents pathogènes si les conditions
+    d'asepsie sont insuffisantes. L'utilisation de l'acupuncture a été critiquée sur le plan éthique lorsqu'elle
+    se fait au détriment de traitements efficaces.
+</p>
+<p>
+    La pratique de l'acupuncture est attestée depuis plusieurs millénaires en Asie (en particulier en Inde, Chine,
+    Corée et Japon). De par ses racines historiques, géographiques et culturelles, de ses conditions d’implantation en
+    Occident, l’acupuncture n'intéresse pas seulement la médecine mais aussi l'anthropologie, l'histoire des sciences,
+    l'épistémologie, la sociologie et ce depuis son introduction en Europe au XVIIe siècle. L'UNESCO l'a inscrite au
+    patrimoine culturel immatériel de l'humanité le 16 novembre 2010.
 </p>
 <p>
     Ce site est là pour vous donner des informations sur l'acupuncture et vous pourrez trouver un catalogue

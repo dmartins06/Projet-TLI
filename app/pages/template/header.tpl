@@ -5,4 +5,5 @@
    </h1>
    {include file="nav.tpl"}
 </header>
+{include file='login.tpl'}
 
