@@ -4,10 +4,15 @@ header {
     padding-left: 15%;
     padding-right: 15%;
     position: relative;
+<<<<<<< HEAD
+=======
+    width: 100%;
+>>>>>>> d9a6600c411860ca7f7a995998bd649fb61bad8c
 }
 
 header>img {
     vertical-align: middle;
+<<<<<<< HEAD
 }
 
 #loginForm {
@@ -17,4 +22,6 @@ header>img {
     padding-top: 2%;
     display:none;
     border-top: 1px white solid;
+=======
+>>>>>>> d9a6600c411860ca7f7a995998bd649fb61bad8c
 }
