@@ -9,7 +9,11 @@
 * Ouvrir le navigateur web et aller à la page `localhost:8001`
 
 ## Configuration
+* Pour se connecter à la session linux :
+ * Login : tp
+ * Mot de passe : tp
 
-* Pour se connecter, les identifiants : 
+
+* Pour se connecter à l'application, les identifiants : 
  * Login : admin
  * Mot de passe : admin
