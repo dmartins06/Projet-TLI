@@ -1,0 +1,12 @@
+header {
+    background-color: cadetblue;
+    color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+    position: relative;
+    width: 100%;
+}
+
+header>img {
+    vertical-align: middle;
+}

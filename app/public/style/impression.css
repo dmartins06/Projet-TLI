@@ -1,0 +1,15 @@
+header {
+    display: none;
+}
+
+@page {
+    size: A4;
+}
+
+footer {
+    display: none;
+}
+
+form {
+    display: none;
+}

@@ -1,0 +1,12 @@
+.content {
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.content>h1 {
+    font-size: 2em;
+    color: cadetblue;
+}
