@@ -1452,7 +1452,7 @@ INSERT INTO `patho` (`idP`, `mer`, `type`, `desc`) VALUES
 
 CREATE TABLE IF NOT EXISTS `symptome` (
   `idS` int(11) NOT NULL AUTO_INCREMENT,
-  `descri` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `desc` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`idS`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=449 ;
 
@@ -1460,7 +1460,7 @@ CREATE TABLE IF NOT EXISTS `symptome` (
 -- Contenu de la table `symptome`
 --
 
-INSERT INTO `symptome` (`idS`, `descri`) VALUES
+INSERT INTO `symptome` (`idS`, `desc`) VALUES
 (1, 'Abdomen dilaté, douloureux et chaud'),
 (2, 'Abdomen flasque'),
 (3, 'Absence d''érection'),
@@ -2478,3 +2478,41 @@ INSERT INTO `users` (`name`, `hash`) VALUES
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+CREATE TABLE IF NOT EXISTS `typePatho` (
+  `codeType` varchar(5) NOT NULL,
+  `nameType` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`codeType`),
+    KEY `type` (`codeType`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Contenu de la table `typePatho`
+--
+
+INSERT INTO `typePatho` (`codeType`, `nameType`) VALUES
+('me', 'méridien externe'),
+('mi', 'méridien interne'),
+('lp', 'luo plein'),
+('lv', 'luo vide'),
+('j', 'jing jin'),
+('tfp', 'plein'),
+('tfv', 'vide'),
+('tfc', 'chaud'),
+('tff', 'froid'),
+('tfpc', 'plein et chaud'),
+('tfvf', 'vide et froid'),
+('l2p', 'grand luo plein'),
+('tfv-', 'yin vide'),
+('tfv+', 'yang vide'),
+('tfvfs', 'supérieur vide et froid'),
+('tfpcs', 'supérieur plein et chaud'),
+('tfvfm', 'moyen vide et froid'),
+('tfpcm', 'moyen plein et chaud'),
+('tfvfi', 'inférieur vide et froid'),
+('tfpci', 'inférieur plein et chaud'),
+('mv', 'mai'),
+('mvi', 'inférieur mai'),
+('mvp', 'postérieur mai'),
+('mva', 'antérieur mai');

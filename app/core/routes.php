@@ -1,6 +1,5 @@
 <?php
 
-
 Router::addRoute('/', 'home.php');
 Router::addRoute('enregistrer/', 'signup.php');
 Router::addRoute('contact/', 'contact.php');
@@ -15,3 +14,4 @@ Router::addRouteApi('deconnexion/', 'disconnect.php');
 Router::addRouteApi('pathologies/', 'pathologies.php');
 Router::addRouteApi('symptomes/', 'symptomes.php');
 Router::addRouteApi('meridiens/', 'meridiens.php');
+Router::addRouteApi('rechercheParCritere/', 'apiPatho.php');
