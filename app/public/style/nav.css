@@ -23,6 +23,6 @@ nav>ul>li a:hover {
     color: cadetblue;
 }
 
-#loginForm {
+.userManage {
     float: right;
 }

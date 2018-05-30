@@ -1,16 +1,13 @@
 <nav>
     <ul>
         <li><a href="/">Accueil</a></li>
-        <li><a href="">Liste pathologies</a></li>
-        <li><a href="">Contact</a></li>
-
-        <li id="loginForm">
+        <li><a href="/liste">Liste pathologies</a></li>
+        <li><a href="/contact">Contact</a></li>
             {if $smarty.session.username}
                 {$smarty.session.username}<a href="/deconnexion">Déconnexion</a>
             {else}
-              <a href="/enregistrer">S'enregistrer </a>
+                <li class="userManage"><a href="/enregistrer">S'enregistrer</a></li>
+                <li class="userManage"><a onclick="displayLogin()">Connexion</a></li>
             {/if}
-          
-        </li>
     </ul>
 </nav>
