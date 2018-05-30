@@ -1,0 +1,16 @@
+{extends file='pages/base.html'}
+
+{block name=title}{/block}
+
+
+{block name=content}
+{if $smarty.session.username}
+
+{block name=restricted}
+{/block}
+{else}
+  <h1>Woops</h1>
+  <p>Vous n'avez pas accès au contenu de cette page, vous devez vous identifier</p>
+{/if}
+{/block}
+
