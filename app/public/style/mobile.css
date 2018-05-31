@@ -21,6 +21,8 @@
 
     .content {
         font-size: 0.7em;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 
     .content img {
