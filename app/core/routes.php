@@ -15,3 +15,4 @@ Router::addRouteApi('pathologies/', 'pathologies.php');
 Router::addRouteApi('symptomes/', 'symptomes.php');
 Router::addRouteApi('meridiens/', 'meridiens.php');
 Router::addRouteApi('rechercheParCritere/', 'apiPatho.php');
+Router::addRouteApi('types/', 'apiType.php');

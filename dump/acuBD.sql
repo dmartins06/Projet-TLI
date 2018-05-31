@@ -2492,8 +2492,8 @@ CREATE TABLE IF NOT EXISTS `typePatho` (
 --
 
 INSERT INTO `typePatho` (`codeType`, `nameType`) VALUES
-('me', 'méridien externe'),
-('mi', 'méridien interne'),
+('me', 'meridien externe'),
+('mi', 'meridien interne'),
 ('lp', 'luo plein'),
 ('lv', 'luo vide'),
 ('j', 'jing jin'),
@@ -2506,13 +2506,13 @@ INSERT INTO `typePatho` (`codeType`, `nameType`) VALUES
 ('l2p', 'grand luo plein'),
 ('tfv-', 'yin vide'),
 ('tfv+', 'yang vide'),
-('tfvfs', 'supérieur vide et froid'),
-('tfpcs', 'supérieur plein et chaud'),
+('tfvfs', 'superieur vide et froid'),
+('tfpcs', 'superieur plein et chaud'),
 ('tfvfm', 'moyen vide et froid'),
 ('tfpcm', 'moyen plein et chaud'),
-('tfvfi', 'inférieur vide et froid'),
-('tfpci', 'inférieur plein et chaud'),
+('tfvfi', 'inferieur vide et froid'),
+('tfpci', 'inferieur plein et chaud'),
 ('mv', 'mai'),
-('mvi', 'inférieur mai'),
-('mvp', 'postérieur mai'),
-('mva', 'antérieur mai');
+('mvi', 'inferieur mai'),
+('mvp', 'posterieur mai'),
+('mva', 'anterieur mai');
