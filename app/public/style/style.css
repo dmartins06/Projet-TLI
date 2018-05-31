@@ -4,6 +4,7 @@
 @import "footer.css" screen;
 @import "table.css" screen;
 @import "form.css" screen;
+@import "article.css" screen;
 
 html, body {
     font-family: Arial;
@@ -14,4 +15,9 @@ html, body {
     height: 100%;
     background-image: url("../images/background.png");
     font-size: 22px;
+}
+
+a {
+  decoration: none;
+  color: inherit;
 }

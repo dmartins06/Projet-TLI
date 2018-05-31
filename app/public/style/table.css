@@ -2,6 +2,7 @@
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin-top: 10px;
 }
 
 #resultTable td, #resultTable th {
