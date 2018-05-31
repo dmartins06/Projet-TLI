@@ -4,7 +4,7 @@
 
 <h1>Liste de nos endpoints</h1>
 <p>Notre site met à disposition plusieurs endpoints permettant de recueillir un certain nombre d'informations.</p>
-<p>Ces endpoints sont accessibles même non connecté. (Présentés ci-dessous</p>
+<p>Ces endpoints sont accessibles même non connecté.</p>
 <p>Connectez vous pour plus de contenu sur le site comme une recherche de pathologies par mot clé</p>
 <table id="resultTable">
 <caption>Liste de tous les endpoints disponibles</caption>

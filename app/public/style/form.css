@@ -10,14 +10,12 @@ input[type=text], input[type=password], select {
 
 input[type=submit] {
     width: 50%;
-    background-color: cadetBlue;
+    background-color: cadetblue;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 1em;
 }
 
 input[type=submit]:hover {

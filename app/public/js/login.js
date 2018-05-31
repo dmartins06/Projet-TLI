@@ -1,11 +1,11 @@
 var element;
 
-window.onload = function(){
+$(document).ready( function(){
     element = document.getElementById("loginForm");
     element.style.display = 'none';
-};
+});
 
-function displayLogin() {
+function afficherLogin() {
     if (element.style.display === 'none') {
         element.style.display = 'block';
     }
