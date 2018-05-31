@@ -3,14 +3,14 @@ header( 'Location: /');
 include_once "connect.php";
 
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = $_POST['pwd'];
 $password_confirm = $_POST['password-confirm'];
 
 if(isset($username) && isset($password) && isset($password_confirm)) {
   if($password == $password_confirm) {
     $hash = password_hash($password, PASSWORD_DEFAULT);
     $db = pdoConnect();
-    $stmt = $db->prepare("SELECT * FROM uers where name=:username");
+    $stmt = $db->prepare("SELECT * FROM users where name=:username");
     $stmt->bindParam(':username', $username);
     $stmt->execute();
     if($stmt->rowCount == 0) {
