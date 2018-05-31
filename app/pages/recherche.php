@@ -4,23 +4,24 @@
 
 {block name=restricted}
 
+<h1>Recherche par mot clé</h1>
 <form method="post"  action="rechercheParKeyWord">
   <label for="keyWord">Mot clé</label>
   <input id="keyWord" name="keyword" type="text" required>
   <input id="submit" name="submit" type="submit" value="Rechercher">
-<form>
+</form>
 
 {if $smarty.session.pathologies}
-<h1>Résultat de la recherche pour {$smarty.session.keyword}</h1>
-<table id="resultTable">
+<table id="resultTable" >
+<CAPTION>Liste de toutes les pathologies et symptomes associés à la recherche {$smarty.session.keyword}</CAPTION>
 <tr>
-  <th>Symptome</th>
-  <th>Pathologie</th>
+  <th id="symptome">Symptome</th>
+  <th id="pathologie">Pathologie</th>
 </tr>
 {foreach from=$smarty.session.pathologies item='pathologie'}
   <tr>
-    <td>{$pathologie['symptome']}</td>
-    <td>{$pathologie['pathologie']}</td>
+    <td headers="symptome">{$pathologie['symptome']}</td>
+    <td headers="pathologie">{$pathologie['pathologie']}</td>
   </tr>
 {/foreach}
 </table>

@@ -4,6 +4,7 @@
 @import "footer.css" screen;
 @import "table.css" screen;
 @import "form.css" screen;
+@import "article.css" screen;
 
 html, body {
     font-family: Arial;
