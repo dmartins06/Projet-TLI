@@ -11,6 +11,7 @@
                 <li class="userManage"><a href="/enregistrer">S'enregistrer</a></li>
                 <li class="userManage"><a onclick="displayLogin()">Connexion</a></li>
         {/if}
+        <li><a href="/apiList">Liste des endpoints</a></li>
         <li><a href="/contact">Contact</a></li>
     </ul>
 </nav>
