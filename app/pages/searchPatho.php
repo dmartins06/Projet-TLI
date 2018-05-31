@@ -1,13 +1,13 @@
 {extends file='pages/base.html'}
 {block name=content}
 
-	<script src="public/js/searchPatho.js"></script>script>
+	<script src="public/js/searchPatho.js"></script>
 
     <h1>Recherche de pathologies</h1>
 
     <form method="post" action="rechercheParCritere">
 	    <div class="criteres">
-	        <h2>Critères de recherche</h2>
+	    		<label for="name">Type de pathologies</label> 
 		      	<select name="type" id="type">
 					{foreach from=$smarty.session.types item='type'}
 						<option value="{$type['codeType']}">{$type['nameType']}</option>
