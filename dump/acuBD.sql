@@ -2478,3 +2478,41 @@ INSERT INTO `users` (`name`, `hash`) VALUES
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+CREATE TABLE IF NOT EXISTS `typePatho` (
+  `codeType` varchar(5) NOT NULL,
+  `nameType` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`codeType`),
+    KEY `type` (`codeType`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Contenu de la table `typePatho`
+--
+
+INSERT INTO `typePatho` (`codeType`, `nameType`) VALUES
+('me', 'meridien externe'),
+('mi', 'meridien interne'),
+('lp', 'luo plein'),
+('lv', 'luo vide'),
+('j', 'jing jin'),
+('tfp', 'plein'),
+('tfv', 'vide'),
+('tfc', 'chaud'),
+('tff', 'froid'),
+('tfpc', 'plein et chaud'),
+('tfvf', 'vide et froid'),
+('l2p', 'grand luo plein'),
+('tfv-', 'yin vide'),
+('tfv+', 'yang vide'),
+('tfvfs', 'superieur vide et froid'),
+('tfpcs', 'superieur plein et chaud'),
+('tfvfm', 'moyen vide et froid'),
+('tfpcm', 'moyen plein et chaud'),
+('tfvfi', 'inferieur vide et froid'),
+('tfpci', 'inferieur plein et chaud'),
+('mv', 'mai'),
+('mvi', 'inferieur mai'),
+('mvp', 'posterieur mai'),
+('mva', 'anterieur mai');
