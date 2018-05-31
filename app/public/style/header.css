@@ -1,0 +1,18 @@
+header {
+    background-color: cadetblue;
+    color: white;
+    padding-left: 7%;
+    padding-right: 7%;
+    position: relative;
+}
+
+header>div>img {
+    vertical-align: middle;
+}
+
+header>div>span {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
