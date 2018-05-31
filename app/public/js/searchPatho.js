@@ -1,5 +1,5 @@
 window.onload = function() {
-	if ($("#type").has("option").length == 0) {
+	if ($("#type option").length <= 1) {
 		$.get("types", function(data, status) {
 			location.reload();
 		});
