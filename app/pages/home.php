@@ -5,9 +5,14 @@
 {block name=content}
 
 <h1>
-    Bienvenue sur l'acupuncture pour les nuls.
+    Tout savoir sur l'acupuncture
 </h1>
 
+<article>
+<header>
+<h2> 1 - Histoire de l'acupuncture</h2>
+source: <a href="https://fr.wikipedia.org/wiki/Acupuncture">wikipedia.org</a>
+</header>
 <p>
     L’acupuncture ou acuponcture (du latin médical du XVIIe siècle « acupunctura » formé de acus, « aiguille » et
     punctura, « piqûre ») est un système thérapeutique dont les origines historiques sont très liées avec la
@@ -43,4 +48,5 @@
     Ce site est là pour vous donner des informations sur l'acupuncture et vous pourrez trouver un catalogue
     complet de pathologies ainsi que leurs symptomes. Cliquez sur l'onglet "liste pathologies" du menu pour y accéder.
 </p>
+</article>
 {/block}
