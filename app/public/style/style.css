@@ -5,6 +5,7 @@
 @import "table.css" screen;
 @import "form.css" screen;
 @import "article.css" screen;
+@import "mobile.css" screen;
 
 html, body {
     font-family: Arial;
